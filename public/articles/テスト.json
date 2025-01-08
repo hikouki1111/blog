@@ -1,5 +1,0 @@
-{
-  "title": "テスト",
-  "date": "Wed Jan 08 2025",
-  "md": "# これはテストです\n```js\nconsole.log(\"test\");\n```\n```py\nprint(\"test\")\n```\n```java\nSystem.out.println(\"test\");\n```\n```go\nfmt.println(\"test\")\n```"
-}
