@@ -11,6 +11,21 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --hljs-bg: #ffffff;
+  --hljs-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --hljs-bg: #0d1117;
+    --hljs-color: #c9d1d9;
+  }
+}
+
+.hljs {
+  background: var(--hljs-bg) !important;
+  color: var(--hljs-color) !important;
 }
 
 a {
