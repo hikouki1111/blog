@@ -29,6 +29,7 @@ function Page() {
 
     return(
         <>
+            <a href="../../">Back to home</a>
             <p>{date}</p>
             <div
                 className="md"
