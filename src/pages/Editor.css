@@ -1,0 +1,6 @@
+.panel {
+    display: grid;
+    padding: 3em;
+    margin: 1em;
+    background-color: #1a1a1a;
+}
