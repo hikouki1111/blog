@@ -10,6 +10,7 @@ function Page() {
     const indexOfPage = window.location.pathname.split("/").filter(Boolean).pop();
     const isValidType = indexOfPage != undefined;
     const [article, setArticle] = useState("");
+    const [date, setDate] = useState("");
 
     useEffect(() => {
         if (isValidType) {
@@ -17,6 +18,7 @@ function Page() {
                 const response = await fetch(`/articles/${indexOfPage}.json`);
                 const json = await response.json();
                 setArticle(json["md"]);
+                setDate(json["date"]);
             }
             fetchData();
         }
@@ -27,6 +29,7 @@ function Page() {
 
     return(
         <>
+            <p>{date}</p>
             <div
                 dangerouslySetInnerHTML={{ __html: md.render(article) }}
             />
