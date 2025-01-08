@@ -6,9 +6,9 @@
 
 .article {
   margin: 5em;
-  min-width: 40vw;
+  min-width: 50vw;
   min-height: 18vh;
-  max-width: 40vw;
+  max-width: 50vw;
   max-height: 18vh;
   overflow: hidden;
   white-space: nowrap;
