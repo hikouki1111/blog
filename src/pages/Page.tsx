@@ -31,6 +31,7 @@ function Page() {
         <>
             <p>{date}</p>
             <div
+                className="md"
                 dangerouslySetInnerHTML={{ __html: md.render(article) }}
             />
         </>
