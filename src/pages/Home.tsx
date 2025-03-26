@@ -36,9 +36,19 @@ function Home() {
 
     useEffect(() => {
         const articleList: ReactElement[] = [];
+        const articleCache = localStorage.getItem("articles");
+
+        if (articleCache) {
+            JSON.parse(articleCache)["articles"]?.forEach((article: string) => {
+                articleList.push(<Article articleID={article}/>);
+            });
+            setArticles(articleList);
+        }
+
         const fetchData = async () => {
             const response = await fetch(`/articles/articles_data.json`);
             const json = await response.json();
+            localStorage.setItem("articles", JSON.stringify(json));
             json["articles"].forEach((article: string) => {
                 articleList.push(<Article articleID={article}/>);
             });
