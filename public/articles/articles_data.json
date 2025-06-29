@@ -1,3 +1,7 @@
 {
-  "articles": ["テスト", "【スマホでJava版】 Pojav launcherにmodをインストールする方法【Fabric】", "【Go】Http Requestを簡単に送信できるライブラリ【net_http】"]
+  "articles": [
+    "【Go】Http Requestを簡単に送信できるライブラリ【net_http】",
+    "【スマホでJava版】 Pojav launcherにmodをインストールする方法【Fabric】",
+    "テスト"
+  ]
 }
